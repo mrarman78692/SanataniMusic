@@ -3,7 +3,7 @@ from pyrogram.types import Message
 
 from AarumiMusic import app
 from AarumiMusic.misc import SUDOERS
-from Spy.utils.database import add_sudo, remove_sudo
+from AarumiMusic.utils.database import add_sudo, remove_sudo
 from AarumiMusic.utils.decorators.language import language
 from AarumiMusic.utils.extraction import extract_user
 from AarumiMusic.utils.inline import close_markup
