@@ -10,7 +10,7 @@ import config
 from AarumiMusic import app
 from AarumiMusic.misc import _boot_
 from AarumiMusic.plugins.sudo.sudoers import sudoers_list
-from Spy.utils.database import (
+from AarumiMusic.utils.database import (
     add_served_chat,
     add_served_user,
     blacklisted_chats,
