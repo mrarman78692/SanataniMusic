@@ -40,6 +40,19 @@ from AarumiMusic.utils.inline.settings import (
 from AarumiMusic.utils.inline.start import private_panel
 from config import BANNED_USERS, OWNER_ID
 
+SHASHANK_VD = ["https://telegra.ph/file/89c5023101b65f21fb401.mp4",
+          "https://telegra.ph/file/bbc914cce6cce7f607641.mp4",
+          "https://telegra.ph/file/abc578ecc222d28a861ba.mp4",
+          "https://telegra.ph/file/065f40352707e9b5b7c15.mp4",
+          "https://telegra.ph/file/52ceaf02eae7eed6c9fff.mp4",
+          "https://telegra.ph/file/299108f6ac08f4e65e47a.mp4",
+          "https://telegra.ph/file/7a4e08bd04d628de71fc1.mp4",
+          "https://telegra.ph/file/0ad8b932fe5f7684f941c.mp4",
+          "https://telegra.ph/file/95ebe2065cfb1ac324a1c.mp4",
+          "https://telegra.ph/file/98cf22ccb987f9fedac5e.mp4",
+          "https://telegra.ph/file/f1b1754fc9d01998f24df.mp4",
+          "https://telegra.ph/file/421ee22ed492a7b8ce101.mp4"]
+
 
 @app.on_message(
     filters.command(["settings", "setting"]) & filters.group & ~BANNED_USERS
