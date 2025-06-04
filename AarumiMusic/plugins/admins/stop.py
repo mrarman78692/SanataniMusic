@@ -4,7 +4,7 @@ from pyrogram.types import Message
 from AarumiMusic import app
 from AarumiMusic.core.call import Aarumi
 from AarumiMusic.utils.database import set_loop
-from AarumiMusicutils.decorators import AdminRightsCheck
+from AarumiMusic.utils.decorators import AdminRightsCheck
 from AarumiMusic.utils.inline import close_markup
 from config import BANNED_USERS
 
