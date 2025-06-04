@@ -43,7 +43,7 @@ Press the below button to Fast deploy on Heroku/Raiwlay
 Either you could locally host or deploy on [Heroku](https://heroku.com)
 ### 💜 Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy/)
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/TEAMPURVI/Sumi-Music"> <img src="https://www.herokucdn.com/deploy/button.svg"></a></p>
 
 <br>
 
