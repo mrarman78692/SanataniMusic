@@ -118,13 +118,19 @@ async def gib_repo_callback(_, callback_query):
 @app.on_callback_query(filters.regex("^bot_info_data$"))
 async def show_bot_info(c: app, q: CallbackQuery):
     start = time()
-    x = await c.send_message(q.message.chat.id, "Pinging..")
+    x = await c.send_message(q.message.chat.id, "ᴘɪɴɢ ᴘᴏɴɢ 💕..")
     delta_ping = time() - start
     await x.delete()
     txt = f"""
-    🏓 Pɪɴɢ: {delta_ping * 1000:.3f} ms   
-    🐍 Pʏᴛʜᴏɴ Vᴇʀsɪᴏɴ: 3.10.4
-    🔥 Pʏʀᴏɢʀᴀᴍ Vᴇʀsɪᴏɴ: {pver}
+    💌 ᴘɪɴɢ ᴘᴏɴɢ ʙᴀʙʏ...
+    • ᴅᴀᴛᴀʙᴀsᴇ : ᴏɴʟɪɴᴇ
+    • ʏᴏᴜᴛᴜʙᴇ ᴀᴘɪ: ʀᴇsᴘᴏɴsɪᴠᴇ
+    • ʙᴏᴛ sᴇʀᴠᴇʀ: ʀᴜɴɴɪɴɢ sᴍᴏᴏᴛʜʟʏ
+    • ʀᴇsᴘᴏɴsᴇ ᴛɪᴍᴇ: ᴏᴘᴛɪᴍᴀʟ
+    • ᴀᴘɪ ᴘɪɴɢ: {delta_ping * 1000:.3f} ms   
+    • ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ: 3.10.4
+    • ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ: {pver}
+    • ᴇᴠᴇʀʏᴛʜɪɴɢ ʟᴏᴏᴋs ɢᴏᴏᴅ!
     """
     await q.answer(txt, show_alert=True)
     return
