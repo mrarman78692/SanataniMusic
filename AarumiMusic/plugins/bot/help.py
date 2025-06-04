@@ -57,28 +57,38 @@ async def helper_private(client: app, update: Union[types.Message, types.Callbac
 @app.on_callback_query(filters.regex("settings_back_helper_fixed") & ~BANNED_USERS)
 async def helper_private(client: app, update: Union[types.Message, types.CallbackQuery]):
     is_callback = isinstance(update, types.CallbackQuery)
+
     if is_callback:
         try:
             await update.answer()
-        except:
+        except Exception:
             pass
+
         chat_id = update.message.chat.id
         language = await get_lang(chat_id)
         _ = get_string(language)
         keyboard = first_page(_)
-        await update.edit_message_text(_["help_1"].format(SUPPORT_CHAT), reply_markup=keyboard)
+
+        await update.edit_message_text(
+            _["help_1"].format(SUPPORT_CHAT),
+            reply_markup=keyboard
+        )
+
     else:
         try:
             await update.delete()
-        except:
+        except Exception:
             pass
+
         language = await get_lang(update.chat.id)
         _ = get_string(language)
         keyboard = first_page(_)
-        await update.reply_video(                           random.choice(SHASHANK_VD), 
-            caption=_["help_1"].format(SUPPORT_CHAT), reply_markup=keyboard)
-    
 
+        await update.reply_video(
+            random.choice(SHASHANK_VD),
+            caption=_["help_1"].format(SUPPORT_CHAT),
+            reply_markup=keyboard
+        )
 
 
 @app.on_message(filters.command(["help"]) & filters.group & ~BANNED_USERS)
