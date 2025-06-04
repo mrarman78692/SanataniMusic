@@ -1,3 +1,4 @@
+
 <h2 align="center">
      ──「 ᴀᴀʀᴜᴍɪ ✘ ᴍᴜsɪᴄ 」──
 </h2>
@@ -156,7 +157,10 @@ STRING_SESSION=
 
 - `/end ᴏʀ /stop` : ᴄʟᴇᴀʀs ᴛʜᴇ ǫᴜᴇᴜᴇ ᴀɴᴅ ᴇɴᴅ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ.
 
-To get an instant result do /reboot in chat of logger.
+To get an instant result do /reboot in chat of logger .
+  
+![image](https://graph.org/file/801e199f756d83cb4d7f5-068bb84543385c04b6.jpg)
+
 
 ### Channel Support
 Bot also Supported with Channels. Just add bot and assistant to the Channel as Admin. </details>
