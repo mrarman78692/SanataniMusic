@@ -98,7 +98,7 @@ async def settings_back_markup(client, CallbackQuery: CallbackQuery, _):
         buttons = private_panel(_)
         return await CallbackQuery.edit_message_media(
             InputMediaPhoto(
-                media=config.START_IMG_URL,
+                random.choice(SHASHANK_VD),
                 caption=_["start_2"].format(
                     CallbackQuery.from_user.mention, app.mention),
             ),
