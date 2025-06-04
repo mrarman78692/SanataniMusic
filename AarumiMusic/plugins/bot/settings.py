@@ -123,13 +123,13 @@ async def show_bot_info(c: app, q: CallbackQuery):
     await x.delete()
     txt = f"""
     💌 ᴘɪɴɢ ᴘᴏɴɢ ʙᴀʙʏ...
+
     • ᴅᴀᴛᴀʙᴀsᴇ : ᴏɴʟɪɴᴇ
     • ʏᴏᴜᴛᴜʙᴇ ᴀᴘɪ: ʀᴇsᴘᴏɴsɪᴠᴇ
     • ʙᴏᴛ sᴇʀᴠᴇʀ: ʀᴜɴɴɪɴɢ sᴍᴏᴏᴛʜʟʏ
     • ʀᴇsᴘᴏɴsᴇ ᴛɪᴍᴇ: ᴏᴘᴛɪᴍᴀʟ
     • ᴀᴘɪ ᴘɪɴɢ: {delta_ping * 1000:.3f} ms   
-    • ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ: 3.10.4
-    • ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ: {pver}
+
     • ᴇᴠᴇʀʏᴛʜɪɴɢ ʟᴏᴏᴋs ɢᴏᴏᴅ!
     """
     await q.answer(txt, show_alert=True)
