@@ -1,3 +1,4 @@
+import random
 import config
 from pyrogram import filters
 from time import time, strftime, gmtime
