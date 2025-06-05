@@ -1,6 +1,6 @@
 
 <h2 align="center">
-     ──「 ᴀᴀʀᴜᴍɪ ✘ ᴍᴜsɪᴄ 」──
+     ──「 sᴀɴᴀᴛᴀɴɪ ✘ ᴍᴜsɪᴄ 」──
 </h2>
 
 <p align="center"><a href="https://t.me/Swagger_Soul"><img src="https://files.catbox.moe/q7uiu1.jpg"></a></p>
@@ -43,7 +43,7 @@ Press the below button to Fast deploy on Heroku/Raiwlay
 Either you could locally host or deploy on [Heroku](https://heroku.com)
 ### 💜 Heroku
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/itsAarumi/AarumiMusic"> <img src="https://www.herokucdn.com/deploy/button.svg"></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/itsAarumi/SanataniMusic"> <img src="https://www.herokucdn.com/deploy/button.svg"></a></p>
 
 <br>
 
@@ -78,7 +78,7 @@ sudo apt-get install python3-pip -y
 sudo pip3 install -U pip
 curl -fssL
 https://deb.nodesource.com/setup_19.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm
-git clone https://github.com/itsAarumi/AarumiMusic&& cd AarumiMusic
+git clone https://github.com/itsAarumi/SanataniMusic && cd SanataniMusic
 pip3 install -U -r requirements.txt
 bash setup
 sudo apt install tmux
