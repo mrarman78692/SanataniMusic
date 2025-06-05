@@ -25,7 +25,7 @@ LOGGER_ID = int(getenv("LOGGER_ID", ""))
 
 OWNER_ID = int(getenv("OWNER_ID", "7905552682"))
 
-BOT_USERNAME = getenv("BOT_USERNAME" , "AarumiXMusic_bot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "SanataniXMusicRobot")
 
 COMMAND_HANDLER = getenv("COMMAND_HANDLER", "! / .").split()
 
@@ -35,7 +35,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/itsAarumi/AarumiMusic",
+    "https://github.com/itsAarumi/SanataniMusic",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
