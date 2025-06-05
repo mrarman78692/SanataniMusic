@@ -52,7 +52,7 @@ async def start_pm(client, message: Message, _):
             keyboard = first_page(_)
             await message.reply_photo(
                 random.choice(SHASHANK_PIC),
-            has_spoiler=True, 
+                has_spoiler=True,
                 caption=_["help_1"].format(config.SUPPORT_CHAT),
                 reply_markup=keyboard,
             )
@@ -107,8 +107,17 @@ async def start_pm(client, message: Message, _):
         UP, CPU, RAM, DISK = await bot_sys_stats()
         await message.reply_photo(
             random.choice(SHASHANK_PIC),
-            has_spoiler=True, 
-                        caption=_["start_2"].format(message.from_user.mention, app.mention, UP, DISK, CPU, RAM, served_users, served_chats),
+            has_spoiler=True,
+            caption=_["start_2"].format(
+                message.from_user.mention,
+                app.mention,
+                UP,
+                DISK,
+                CPU,
+                RAM,
+                served_users,
+                served_chats,
+            ),
             reply_markup=InlineKeyboardMarkup(out),
         )
         if await is_on_off(2):
@@ -124,9 +133,8 @@ async def start_gp(client, message: Message, _):
     uptime = int(time.time() - _boot_)
     await message.reply_photo(
         random.choice(SHASHANK_PIC),
-            has_spoiler=True, 
-
-       caption=_["start_1"].format(app.mention, get_readable_time(uptime)),
+        has_spoiler=True,
+        caption=_["start_1"].format(app.mention, get_readable_time(uptime)),
         reply_markup=InlineKeyboardMarkup(out),
     )
     return await add_served_chat(message.chat.id)
@@ -160,7 +168,7 @@ async def welcome(client, message: Message):
                 out = start_panel(_)
                 await message.reply_photo(
                     random.choice(SHASHANK_PIC),
-            has_spoiler=True, 
+                    has_spoiler=True,
                     caption=_["start_3"].format(
                         message.from_user.mention,
                         app.mention,
