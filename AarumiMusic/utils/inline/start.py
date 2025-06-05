@@ -29,9 +29,7 @@ def private_panel(_):
             ),
         ],
         [
-            InlineKeyboardButton(
-                text=_["S_B_5"],
-                user_id=config.OWNER_ID),
+            InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
             InlineKeyboardButton(
                 text="💌 ʏᴛ-ᴀᴘɪ",
                 callback_data="bot_info_data"
