@@ -1,7 +1,7 @@
 import random
-from datetime import datetime
+from datetime import datetime
 from pyrogram import filters
-from pyrogram.types import Message
+from pyrogram.types import Message
 from AarumiMusic import app
 from AarumiMusic.core.call import Aarumi
 from AarumiMusic.utils import bot_sys_stats
@@ -20,15 +20,13 @@ SHASHANK_PIC = [
     "https://files.catbox.moe/qity19.jpg"
 ]
 
-
 @app.on_message(filters.command(["ping", "alive"]) & ~BANNED_USERS)
 @language
 async def ping_com(client, message: Message, _):
     start = datetime.now()
     response = await message.reply_photo(
         photo=random.choice(SHASHANK_PIC),
-                has_spoiler=True,
-        caption=_["ping_1"].format(app.mention),
+        has_spoiler=True, caption=_["ping_1"].format(app.mention),
     )
     pytgping = await Aarumi.ping()
     UP, CPU, RAM, DISK = await bot_sys_stats()
