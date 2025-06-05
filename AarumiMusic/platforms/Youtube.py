@@ -29,8 +29,8 @@ async def shell_cmd(cmd):
 
 
 async def get_stream_url(query, video=False):
-    api_url = "https://yt.sanatanixtech.site/youtube"
-    api_key = "SANATANIxTECH"
+    api_url = "http://3.0.146.239:1470/youtube"
+    api_key = "badmusic_ytstream_apikey_2025"
 
     async with httpx.AsyncClient(timeout=60) as client:
         params = {"query": query, "video": video, "api_key": api_key}
