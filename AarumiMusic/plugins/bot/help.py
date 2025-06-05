@@ -3,30 +3,29 @@ from typing import Union
 from pyrogram import filters, types
 from pyrogram.types import InlineKeyboardMarkup, Message
 from AarumiMusic import app
-from AarumiMusic.utils import first_page, second_page
+from AarumiMusic.utils import help_pannel
 from AarumiMusic.utils.database import get_lang
 from AarumiMusic.utils.decorators.language import LanguageStart, languageCB
 from AarumiMusic.utils.inline.help import help_back_markup, private_help_panel
 from config import BANNED_USERS, START_IMG_URL, SUPPORT_CHAT
 from strings import get_string, helpers
 
-SHASHANK_VD = ["https://telegra.ph/file/89c5023101b65f21fb401.mp4",
-          "https://telegra.ph/file/bbc914cce6cce7f607641.mp4",
-          "https://telegra.ph/file/abc578ecc222d28a861ba.mp4",
-          "https://telegra.ph/file/065f40352707e9b5b7c15.mp4",
-          "https://telegra.ph/file/52ceaf02eae7eed6c9fff.mp4",
-          "https://telegra.ph/file/299108f6ac08f4e65e47a.mp4",
-          "https://telegra.ph/file/7a4e08bd04d628de71fc1.mp4",
-          "https://telegra.ph/file/0ad8b932fe5f7684f941c.mp4",
-          "https://telegra.ph/file/95ebe2065cfb1ac324a1c.mp4",
-          "https://telegra.ph/file/98cf22ccb987f9fedac5e.mp4",
-          "https://telegra.ph/file/f1b1754fc9d01998f24df.mp4",
-          "https://telegra.ph/file/421ee22ed492a7b8ce101.mp4"]
-
+SHASHANK_PIC = [
+    "https://files.catbox.moe/t6485t.jpg",
+    "https://files.catbox.moe/4osoc3.jpg",
+    "https://files.catbox.moe/t6485t.jpg",
+    "https://files.catbox.moe/5e18lv.jpg",
+    "https://files.catbox.moe/bupvsx.jpg",
+    "https://files.catbox.moe/w7f2wa.jpg",
+    "https://files.catbox.moe/2b2dam.jpg",
+    "https://files.catbox.moe/qity19.jpg"
+]
 
 @app.on_message(filters.command(["help"]) & filters.private & ~BANNED_USERS)
 @app.on_callback_query(filters.regex("settings_back_helper") & ~BANNED_USERS)
-async def helper_private(client: app, update: Union[types.Message, types.CallbackQuery]):
+async def helper_private(
+    client: app, update: Union[types.Message, types.CallbackQuery]
+):
     is_callback = isinstance(update, types.CallbackQuery)
     if is_callback:
         try:
@@ -36,7 +35,7 @@ async def helper_private(client: app, update: Union[types.Message, types.Callbac
         chat_id = update.message.chat.id
         language = await get_lang(chat_id)
         _ = get_string(language)
-        keyboard = first_page(_)
+        keyboard = help_pannel(_, True)
         await update.edit_message_text(
             _["help_1"].format(SUPPORT_CHAT), reply_markup=keyboard
         )
@@ -47,44 +46,12 @@ async def helper_private(client: app, update: Union[types.Message, types.Callbac
             pass
         language = await get_lang(update.chat.id)
         _ = get_string(language)
-        keyboard = first_page(_)
-        await update.reply_video(
-            random.choice(SHASHANK_VD),
+        keyboard = help_pannel(_)
+        await update.reply_photo(
+            random.choice(SHASHANK_PIC),
             caption=_["help_1"].format(SUPPORT_CHAT),
             reply_markup=keyboard,
         )
-
-@app.on_callback_query(filters.regex("settings_back_helper_fixed") & ~BANNED_USERS)
-async def helper_private(client: app, update: Union[types.Message, types.CallbackQuery]):
-    is_callback = isinstance(update, types.CallbackQuery)
-
-    if is_callback:
-        try:
-            await update.answer()
-        except:
-            pass
-
-        chat_id = update.message.chat.id
-        language = await get_lang(chat_id)
-        _ = get_string(language)
-        keyboard = first_page(_)
-        await update.edit_message_text(
-            _["help_1"].format(SUPPORT_CHAT),
-            reply_markup=keyboard)
-
-    else:
-        try:
-            await update.delete()
-        except:
-            pass
-
-        language = await get_lang(update.chat.id)
-        _ = get_string(language)
-        keyboard = first_page(_)
-
-        await update.reply_video(
-            random.choice(SHASHANK_VD),            caption=_["help_1"].format(SUPPORT_CHAT),
-            reply_markup=keyboard)
 
 
 @app.on_message(filters.command(["help"]) & filters.group & ~BANNED_USERS)
@@ -130,31 +97,3 @@ async def helper_cb(client, CallbackQuery, _):
         await CallbackQuery.edit_message_text(helpers.HELP_14, reply_markup=keyboard)
     elif cb == "hb15":
         await CallbackQuery.edit_message_text(helpers.HELP_15, reply_markup=keyboard)
-    elif cb == "hb16":
-        await CallbackQuery.edit_message_text(helpers.HELP_16, reply_markup=keyboard)
-
-Shiv_Text = ("ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴀᴛᴇɢᴏʀʏ ғᴏʀ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴɴᴀ ɢᴇᴛ ʜᴇʟᴩ.\nᴀsᴋ ʏᴏᴜʀ ᴅᴏᴜʙᴛs ᴀᴛ <a href={0}>sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ</a>\n\nᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ: <code>/</code>")
-
-@app.on_callback_query(filters.regex("shivXaarumi") & ~BANNED_USERS)
-@languageCB
-async def first_pagexx(client, CallbackQuery, _):
-    menu_next = second_page(_)
-    try:
-        await CallbackQuery.message.edit_text(Shiv_Text, reply_markup=menu_next)
-        return
-    except:
-        return
-
-@app.on_callback_query(filters.regex("Aarumi") & ~BANNED_USERS)
-@languageCB
-async def first_pagee(client, CallbackQuery, _):
-    menu_next = second_page(_)
-    try:
-        await CallbackQuery.message.edit_text(Shiv_Text, reply_markup=menu_next)
-        return
-    except:
-        return
-
-
-# Do not try to change whole code, just add or remove what you want.
-# Credited To Aarumi
