@@ -9,7 +9,7 @@ import config
 from AarumiMusic import app
 from AarumiMusic.misc import _boot_
 from AarumiMusic.plugins.sudo.sudoers import sudoers_list
-from AarumiMusicutils.database import get_served_chats, get_served_users, get_sudoers
+from AarumiMusic.utils.database import get_served_chats, get_served_users
 from AarumiMusic.utils import bot_sys_stats
 from AarumiMusic.utils.database import (
     add_served_chat,
