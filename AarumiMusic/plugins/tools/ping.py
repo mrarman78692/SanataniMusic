@@ -26,7 +26,8 @@ async def ping_com(client, message: Message, _):
     start = datetime.now()
     response = await message.reply_photo(
         photo=random.choice(SHASHANK_PIC),
-        has_spoiler=True, caption=_["ping_1"].format(app.mention),
+        has_spoiler=True,
+ caption=_["ping_1"].format(app.mention),
     )
     pytgping = await Aarumi.ping()
     UP, CPU, RAM, DISK = await bot_sys_stats()
