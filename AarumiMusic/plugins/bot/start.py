@@ -23,7 +23,7 @@ from AarumiMusic.utils.database import (
 )
 from AarumiMusic.utils.decorators.language import LanguageStart
 from AarumiMusic.utils.formatters import get_readable_time
-from AarumiMusic.utils.inline import first_page, private_panel, start_panel
+from AarumiMusic.utils.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
 
@@ -49,7 +49,7 @@ async def start_pm(client, message: Message, _):
     if len(message.text.split()) > 1:
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
-            keyboard = first_page(_)
+            keyboard = help_pannel(_)
             await message.reply_photo(
                 random.choice(SHASHANK_PIC),
                 has_spoiler=True,
