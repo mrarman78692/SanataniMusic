@@ -10,7 +10,7 @@ heroku3
 httpx==0.27.2
 motor
 numpy
-pillow
+pillow==11.2.1
 psutil
 py-tgcalls==0.9.7
 pykeyboard
