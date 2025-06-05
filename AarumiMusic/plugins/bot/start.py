@@ -27,44 +27,15 @@ from AarumiMusic.utils.inline import first_page, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
 
-SHASHANK_VD = ["https://telegra.ph/file/89c5023101b65f21fb401.mp4",
-          "https://telegra.ph/file/bbc914cce6cce7f607641.mp4",
-          "https://telegra.ph/file/abc578ecc222d28a861ba.mp4",
-          "https://telegra.ph/file/065f40352707e9b5b7c15.mp4",
-          "https://telegra.ph/file/52ceaf02eae7eed6c9fff.mp4",
-          "https://telegra.ph/file/299108f6ac08f4e65e47a.mp4",
-          "https://telegra.ph/file/7a4e08bd04d628de71fc1.mp4",
-          "https://telegra.ph/file/0ad8b932fe5f7684f941c.mp4",
-          "https://telegra.ph/file/95ebe2065cfb1ac324a1c.mp4",
-          "https://telegra.ph/file/98cf22ccb987f9fedac5e.mp4",
-          "https://telegra.ph/file/f1b1754fc9d01998f24df.mp4",
-          "https://telegra.ph/file/421ee22ed492a7b8ce101.mp4"]
-
-SHASHANK_PH = [
-    "https://files.catbox.moe/jrupn9.jpg",
-    "https://files.catbox.moe/5z141p.jpg",
-    "https://files.catbox.moe/fnl0h7.jpg",
-    "https://files.catbox.moe/1lz1go.jpg",
-    "https://files.catbox.moe/avackl.jpg",
-    "https://files.catbox.moe/1yrzwz.jpg",
-    "https://files.catbox.moe/6y22qw.jpg",
-    "https://files.catbox.moe/gnnsf2.jpg",
-    "https://files.catbox.moe/ss6r60.jpg",
-    "https://files.catbox.moe/yuob18.jpg",
-    "https://files.catbox.moe/i9xrrp.jpg",
-    "https://files.catbox.moe/a9tx8f.jpg"
-    "https://files.catbox.moe/wlt26x.jpg",
-    "https://files.catbox.moe/c1lylh.jpg",
-    "https://files.catbox.moe/82eymp.jpg",
-]
-
-STICKERS = [  
-    "CAACAgUAAxkBAAEBdnpm-CKSe_WqOslpePn3ECfb_RaE9wACsRIAAk3CoVcRpQ6OPeMXSh4E",
-    "CAACAgUAAxkBAAEBdnxm-CKSAvkd77cIkLVi22i5KetRwAACjBIAAmiswVfmvH70I9yO1B4E",
-    "CAACAgUAAxkBAAEBdn1m-CKTitpex6wRSb7XepTBL1m7hQACGBMAAgj0wVc1DtFNJKC_Ih4E",
-    "CAACAgUAAxkBAAEBdn5m-CKUm8kE8yW1wfVn93uPBvE3nwACoxMAArRPwFeUVWErgkaFyR4E",
-    "CAACAgUAAxkBAAEBdn9m-CKVC9XUkmuOW6b1gIL0Teg6HgACyREAAoz_wFeQweR6NJm6Yh4E",
-    "CAACAgUAAxkBAAEBdntm-CKSYkLSIPrQAiOxMeBfyZpGegACfRAAAlMQwVdx2UGzjxf3CR4E",
+SHASHANK_PIC = [
+    "https://files.catbox.moe/t6485t.jpg",
+    "https://files.catbox.moe/4osoc3.jpg",
+    "https://files.catbox.moe/t6485t.jpg",
+    "https://files.catbox.moe/5e18lv.jpg",
+    "https://files.catbox.moe/bupvsx.jpg",
+    "https://files.catbox.moe/w7f2wa.jpg",
+    "https://files.catbox.moe/2b2dam.jpg",
+    "https://files.catbox.moe/qity19.jpg"
 ]
 
 async def delete_sticker_after_delay(message, delay):
@@ -79,8 +50,8 @@ async def start_pm(client, message: Message, _):
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
             keyboard = first_page(_)
-            await message.reply_video(
-                random.choice(SHASHANK_VD),
+            await message.reply_photo(
+                random.choice(SHASHANK_PIC),
                 caption=_["help_1"].format(config.SUPPORT_CHAT),
                 reply_markup=keyboard,
             )
@@ -133,8 +104,8 @@ async def start_pm(client, message: Message, _):
         served_chats = len(await get_served_chats())
         served_users = len(await get_served_users())
         UP, CPU, RAM, DISK = await bot_sys_stats()
-        await message.reply_video(
-            random.choice(SHASHANK_VD),
+        await message.reply_photo(
+            random.choice(SHASHANK_PIC),
             caption=_["start_2"].format(message.from_user.mention, app.mention, UP, DISK, CPU, RAM, served_users, served_chats),
             reply_markup=InlineKeyboardMarkup(out),
         )
@@ -149,8 +120,8 @@ async def start_pm(client, message: Message, _):
 async def start_gp(client, message: Message, _):
     out = start_panel(_)
     uptime = int(time.time() - _boot_)
-    await message.reply_video(
-        random.choice(SHASHANK_VD),
+    await message.reply_photo(
+        random.choice(SHASHANK_PIC),
         caption=_["start_1"].format(app.mention, get_readable_time(uptime)),
         reply_markup=InlineKeyboardMarkup(out),
     )
@@ -184,7 +155,7 @@ async def welcome(client, message: Message):
 
                 out = start_panel(_)
                 await message.reply_photo(
-                    random.choice(SHASHANK_PH),
+                    random.choice(SHASHANK_PIC),
                     caption=_["start_3"].format(
                         message.from_user.mention,
                         app.mention,
