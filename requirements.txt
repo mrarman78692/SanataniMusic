@@ -21,6 +21,7 @@ requests
 speedtest-cli
 spotipy
 tgcrypto
+python-telegram-bot
 unidecode
 yt-dlp
 git+https://github.com/yt-dlp/yt-dlp
