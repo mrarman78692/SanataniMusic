@@ -3,7 +3,7 @@
      ──「 sᴀɴᴀᴛᴀɴɪ ✘ ᴍᴜsɪᴄ 」──
 </h2>
 
-<p align="center"><a href="https://t.me/Swagger_Soul"><img src="https://files.catbox.moe/q7uiu1.jpg"></a></p>
+<p align="center"><a href="https://t.me/Swagger_Soul"><img src="https://files.catbox.moe/uet7v1.jpg"></a></p>
 
 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>  
  <p align="center">
