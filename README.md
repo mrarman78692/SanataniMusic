@@ -21,7 +21,7 @@
 
 </p>
 <p align='center'>
-    This repo will use to deploy for music playing bot of telegram
+    ᴛʜɪs ʀᴇᴘᴏ ᴡɪʟʟ ᴜsᴇ ᴛᴏ ᴅᴇᴘʟᴏʏ ғᴏʀ ᴍᴜsɪᴄ ᴘʟᴧʏɪɴɢ ʙᴏᴛ ᴏғ ᴛᴇʟᴇɢʀᴧᴍ
 </p>
 
 
