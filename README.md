@@ -7,7 +7,7 @@
 
 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>  
  <p align="center">
-    ᴧ ᴛᴇʟᴇɢʀᴧᴍ ʙᴏᴛ ᴛᴏ ᴘʟᴧy ᴍᴜsɪᴄ ɪɴ ᴧ ᴠɪᴅᴇᴏ ᴄʜᴧᴛs.
+    ᴧ ᴛᴇʟᴇɢʀᴧᴍ ʙᴏᴛ ᴛᴏ ᴘʟᴧʏ ᴍᴜsɪᴄ ɪɴ ᴧ ᴠɪᴅᴇᴏ ᴄʜᴧᴛs.
     <br />
    </strong></a>
   </p>
@@ -25,7 +25,7 @@
 </p>
 
 
-## ♢ ʜᴏᴡ ᴛᴏ ᴍᴧᴋᴇ yᴏᴜʀ ᴏᴡɴ :
+## ♢ ʜᴏᴡ ᴛᴏ ᴍᴧᴋᴇ ʏᴏᴜʀ ᴏᴡɴ :
 
 
 #### ♢ Click on This Drop-down and get more details
