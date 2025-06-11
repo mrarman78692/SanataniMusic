@@ -55,7 +55,7 @@ then goto the <a href="#mandatory-vars">variables tab</a> for more info on setti
   
 <p>
 
-🚀Features<p>
+🚀ғᴇᴧᴛᴜʀᴇs<p>
 💥Superfast⚡️ download and stream links.<br>
 💥No ads in playing songs.<br>
 💥Superfast interface.<br>
@@ -69,7 +69,7 @@ then goto the <a href="#mandatory-vars">variables tab</a> for more info on setti
 💥A lot more tired of writing check out by deploying it. 
 </details>
 <details>
-  <summary><b>Host it on VPS Locally :</b></summary>
+  <summary><b>ʜᴏsᴛ ɪᴛ ᴏɴ ᴠᴘs ʟᴏᴄᴧʟʟʏ :</b></summary>
 
 
 ```py
