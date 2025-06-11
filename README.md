@@ -7,7 +7,7 @@
 
 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>  
  <p align="center">
-    A Telegram bot to play music in a video chats.
+    ᴧ ᴛᴇʟᴇɢʀᴧᴍ ʙᴏᴛ ᴛᴏ ᴘʟᴧy ᴍᴜsɪᴄ ɪɴ ᴧ ᴠɪᴅᴇᴏ ᴄʜᴧᴛs.
     <br />
    </strong></a>
   </p>
@@ -41,7 +41,7 @@
 
 Press the below button to Fast deploy on Heroku/Raiwlay
 Either you could locally host or deploy on [Heroku](https://heroku.com)
-### 💜 Heroku
+### 💜 ʜᴇʀᴏᴋᴜ
 
 <p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/itsAarumi/SanataniMusic"> <img src="https://www.herokucdn.com/deploy/button.svg"></a></p>
 
