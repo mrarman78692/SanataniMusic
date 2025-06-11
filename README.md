@@ -109,7 +109,7 @@ STRING_SESSION=
   </details>
 
 <details>
-  <summary><b>Vars and Details :</b></summary>
+  <summary><b>ᴠᴧʀs ᴧɴᴅ ᴅᴇᴧᴛᴧɪʟs :</b></summary>
 
 `API_ID` : Goto [my.telegram.org](https://my.telegram.org) to obtain this.
 
