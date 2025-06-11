@@ -165,7 +165,7 @@ To get an instant result do /reboot in chat of logger .
 ### ᴄʜᴧɴɴᴇʟ sᴜᴘᴘᴏᴜʀᴛ
 Bot also Supported with Channels. Just add bot and assistant to the Channel as Admin. </details>
 
-### ᴄʀᴇᴅɪᴛs : 
+### ♢ ᴄʀᴇᴅɪᴛs : 
 
 - [Me](https://github.com/itsAarumi)
 - [Telegram](https://t.me/Swagger_Soul)
