@@ -1,6 +1,6 @@
 
 <h2 align="center">
-     ──「 sᴀɴᴀᴛᴀɴɪ ✘ ᴍᴜsɪᴄ 」──
+     ──「 sᴧɴᴧᴛᴧɴɪ ꭙ ᴍᴜꜱɪᴄ 」──
 </h2>
 
 <p align="center"><a href="https://t.me/Swagger_Soul"><img src="https://files.catbox.moe/uet7v1.jpg"></a></p>
