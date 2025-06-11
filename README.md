@@ -133,7 +133,7 @@ STRING_SESSION=
  </details>
 
 <details>
-  <summary><b>How to Use :</b></summary>
+  <summary><b>ʜᴏᴡ ᴛᴏ ᴜsᴇ :</b></summary>
 
 :warning: **Before using the  bot, don't forget to add the bot to the `Logger_Chat` as an Admin**
  
