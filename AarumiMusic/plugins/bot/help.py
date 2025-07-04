@@ -11,13 +11,13 @@ from config import BANNED_USERS, SUPPORT_CHAT
 from strings import get_string, helpers
 
 SHASHANK_PIC = [
-    "https://files.catbox.moe/t6485t.jpg",
-    "https://files.catbox.moe/4osoc3.jpg",
-    "https://files.catbox.moe/5e18lv.jpg",
-    "https://files.catbox.moe/bupvsx.jpg",
-    "https://files.catbox.moe/w7f2wa.jpg",
-    "https://files.catbox.moe/2b2dam.jpg",
-    "https://files.catbox.moe/qity19.jpg",
+    "https://files.catbox.moe/4rpo7o.jpg",
+    "https://files.catbox.moe/hgvcz6.jpg",
+    "https://files.catbox.moe/b9vscc.jpg",
+    "https://files.catbox.moe/yzd87s.jpg",
+    "https://files.catbox.moe/d5gvwa.jpg",
+    "https://files.catbox.moe/n3dh8g.jpg",
+    "https://files.catbox.moe/vwe6s7.jpg",
 ]
 
 @app.on_message(filters.command(["help"]) & filters.private & ~BANNED_USERS)
